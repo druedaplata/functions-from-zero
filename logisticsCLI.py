@@ -31,11 +31,13 @@ def distance(city1, city2):
     ./logisticsCLI.py distance "New York" "Los Angeles"
     """
     click.echo(click.style("Distance between two cities", fg="green"))
-    click.echo(click.style(
-        f"{distance_between_two_points(get_coordinates(city1), get_coordinates(city2))}",
-        fg="blue"
+    click.echo(
+        click.style(
+            f"{distance_between_two_points(get_coordinates(city1), get_coordinates(city2))}",
+            fg="blue",
+        )
     )
-)
+
 
 if __name__ == "__main__":
     cli()
