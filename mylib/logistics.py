@@ -32,3 +32,14 @@ def total_distance(cities):
     for i in range(len(cities) - 1):
         total += distance_between_two_points(cities[i][1], cities[i - 1][1])
     return total
+
+def get_coordinates(city):
+    """Return the coordinates of a city"""
+    for city_name, coordinates in CITIES:
+        if city_name == city:
+            return coordinates
+
+
+def cities_list():
+    """Print the list of cities"""
+    return [city[0] for city in CITIES]
