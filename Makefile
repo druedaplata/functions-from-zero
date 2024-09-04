@@ -3,12 +3,13 @@ install:
 		pip install -r requirements.txt
 	
 test:
-	python -m pytest -vv --cov=wikiphrases --cov=nlplogic test_corenlp.py
+	python -m pytest -vv --cov=calcCLI --cov=mylib test_*.py
 
 lint:
-	pylint --disable=R,C *.py 
+	pylint --disable=R,C --ignore-patterns=test_.*?py *.py mylib/*.py
+
 format:
-	black *.py
+	black *.py mylib/*.py
 
 deploy:
 	echo "not implemented"
