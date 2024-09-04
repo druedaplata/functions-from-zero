@@ -1,3 +1,5 @@
+[![CI](https://github.com/druedaplata/functions-from-zero/actions/workflows/main.yml/badge.svg)](https://github.com/druedaplata/functions-from-zero/actions/workflows/main.yml)
+
 # functions-from-zero
 A repo to learn functions
 
