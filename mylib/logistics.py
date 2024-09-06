@@ -44,3 +44,14 @@ def get_coordinates(city):
 def cities_list():
     """Print the list of cities"""
     return [city[0] for city in CITIES]
+
+
+def travel_time(city1, city2, speed=60):
+    """
+    Estimate the travel time between two cities by car.
+    Assume the speed is 60 miles per hour.
+    """
+    return (
+        distance_between_two_points(get_coordinates(city1), get_coordinates(city2))
+        / speed
+    )

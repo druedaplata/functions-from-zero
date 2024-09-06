@@ -1,4 +1,4 @@
-from mylib.logistics import CITIES, distance_between_two_points, print_cities
+from mylib.logistics import CITIES, distance_between_two_points, cities_list
 
 
 def test_distance_between_two_points():
@@ -7,4 +7,4 @@ def test_distance_between_two_points():
 
 def test_print_cities():
     """"""
-    pass
+    assert "Chicago" in cities_list()
